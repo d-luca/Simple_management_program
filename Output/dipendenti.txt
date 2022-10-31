@@ -1,0 +1,11 @@
+00001~             default~             default~             default
+00002~                luca~                   d~                  ld
+00003~           francesco~                   f~                   f
+00004~       inserimento 2~                   r~                   r
+00005~             filippo~                   f~                   f
+00006~          modifica 1~                   g~                   g
+00007~            cancella~                   c~                   c
+00008~                   8~                   8~                   8
+00009~                   9~                   9~                   9
+00010~                  10~                  10~                  10
+00011~       inserimento 1~                  er~                  34

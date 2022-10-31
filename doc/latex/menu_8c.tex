@@ -1,0 +1,194 @@
+\hypertarget{menu_8c}{}\section{src/menu.c File Reference}
+\label{menu_8c}\index{src/menu.\+c@{src/menu.\+c}}
+{\ttfamily \#include \char`\"{}head\+\_\+menu.\+h\char`\"{}}\newline
+Include dependency graph for menu.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{menu_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{menu_8c_a4e6351c97432570c42e4bc1c36142400}{C\+H\+I\+U\+DI}~-\/1
+\begin{DoxyCompactList}\small\item\em Definisce il valore che verra\textquotesingle{} considerato come quello per uscire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{menu_8c_aa510a50efd9498c295969cf173fc6337}{show\+\_\+nolog\+\_\+menu} ()
+\begin{DoxyCompactList}\small\item\em Mostra l\textquotesingle{}interfaccia grafica del menu\textquotesingle{} nolog. \end{DoxyCompactList}\item 
+void \hyperlink{menu_8c_a0c94e4af9357a56b13dc6cf246a8fb92}{show\+\_\+log\+\_\+menu} ()
+\begin{DoxyCompactList}\small\item\em Mostra l\textquotesingle{}interfaccia grafica del menu\textquotesingle{} log. \end{DoxyCompactList}\item 
+void \hyperlink{menu_8c_a4f9be92c193bf45a9635e3c00bddc030}{show\+\_\+novita\+\_\+menu} ()
+\begin{DoxyCompactList}\small\item\em Mostra l\textquotesingle{}interfaccia grafica del menu\textquotesingle{} principale novita\textquotesingle{}. \end{DoxyCompactList}\item 
+void \hyperlink{menu_8c_aad25e471acaffe14832ddc5437f41c6d}{show\+\_\+prodotti\+\_\+menu} ()
+\begin{DoxyCompactList}\small\item\em Mostra l\textquotesingle{}interfaccia grafica del menu\textquotesingle{} principale prodotti. \end{DoxyCompactList}\item 
+void \hyperlink{menu_8c_adecccf77072a3787432afbfc4d87c4d8}{show\+\_\+clienti\+\_\+menu} ()
+\begin{DoxyCompactList}\small\item\em Mostra l\textquotesingle{}interfaccia grafica del menu\textquotesingle{} principale clienti. \end{DoxyCompactList}\item 
+void \hyperlink{menu_8c_a92366c9bd30febe9b239551d133525f1}{show\+\_\+dipendenti\+\_\+menu} ()
+\begin{DoxyCompactList}\small\item\em Mostra l\textquotesingle{}interfaccia grafica del menu\textquotesingle{} principale dipendenti. \end{DoxyCompactList}\item 
+void \hyperlink{menu_8c_a6b162ea688a7c5a59e96e8177dfda86d}{show\+\_\+ordinamento\+\_\+prodotti\+\_\+menu} ()
+\begin{DoxyCompactList}\small\item\em Mostra l\textquotesingle{}interfaccia grafica del menu\textquotesingle{} per la scelta del tipo di ordinamento per i prodotti. \end{DoxyCompactList}\item 
+void \hyperlink{menu_8c_ac9b4d8c08fe2a2db50c306d3c150ca28}{show\+\_\+ordinamento\+\_\+persone\+\_\+menu} ()
+\begin{DoxyCompactList}\small\item\em Mostra l\textquotesingle{}interfaccia grafica del menu\textquotesingle{} per la scelta del tipo di ordinamento per dipendenti e clienti. \end{DoxyCompactList}\item 
+void \hyperlink{menu_8c_afaa16c2b36a1936671f280a3cb40ad29}{login} (\hyperlink{head__strutture_8h_a784ca7b7fa64cbb661eb0c903348c1ce}{sessione\+\_\+t} $\ast$se)
+\begin{DoxyCompactList}\small\item\em Gestisce l\textquotesingle{}accesso di un dipendente. \end{DoxyCompactList}\item 
+int \hyperlink{menu_8c_adceb36f3ebfff88ac2283e19d50c01a6}{choise} (\hyperlink{head__strutture_8h_a27938a0a874a833cfee26456c5d730b1}{menu\+\_\+t} m)
+\begin{DoxyCompactList}\small\item\em In base a quale menu\textquotesingle{} e\textquotesingle{} stato appena visualizzato, gestisce l\textquotesingle{}immissione dei possibili input controllandone la consistenza col tipo di menu.~\newline
+Ritorna la scelta consistente dell\textquotesingle{}utente. \end{DoxyCompactList}\item 
+int \hyperlink{menu_8c_a96fb221481623d0f77e6fd1e6f7ad118}{menu\+\_\+nextmove} (\hyperlink{head__strutture_8h_a784ca7b7fa64cbb661eb0c903348c1ce}{sessione\+\_\+t} $\ast$se)
+\begin{DoxyCompactList}\small\item\em Imposta la prossima azione del programma. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Il file contiene metodi per i menu\textquotesingle{} come visualizzazione e inserimento scelta. 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{menu_8c_a4e6351c97432570c42e4bc1c36142400}\label{menu_8c_a4e6351c97432570c42e4bc1c36142400}} 
+\index{menu.\+c@{menu.\+c}!C\+H\+I\+U\+DI@{C\+H\+I\+U\+DI}}
+\index{C\+H\+I\+U\+DI@{C\+H\+I\+U\+DI}!menu.\+c@{menu.\+c}}
+\subsubsection{\texorpdfstring{C\+H\+I\+U\+DI}{CHIUDI}}
+{\footnotesize\ttfamily \#define C\+H\+I\+U\+DI~-\/1}
+
+
+
+Definisce il valore che verra\textquotesingle{} considerato come quello per uscire. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{menu_8c_adceb36f3ebfff88ac2283e19d50c01a6}\label{menu_8c_adceb36f3ebfff88ac2283e19d50c01a6}} 
+\index{menu.\+c@{menu.\+c}!choise@{choise}}
+\index{choise@{choise}!menu.\+c@{menu.\+c}}
+\subsubsection{\texorpdfstring{choise()}{choise()}}
+{\footnotesize\ttfamily int choise (\begin{DoxyParamCaption}\item[{\hyperlink{head__strutture_8h_a27938a0a874a833cfee26456c5d730b1}{menu\+\_\+t}}]{m }\end{DoxyParamCaption})}
+
+
+
+In base a quale menu\textquotesingle{} e\textquotesingle{} stato appena visualizzato, gestisce l\textquotesingle{}immissione dei possibili input controllandone la consistenza col tipo di menu.~\newline
+Ritorna la scelta consistente dell\textquotesingle{}utente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu\+\_\+t} & menu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{menu_8c_afaa16c2b36a1936671f280a3cb40ad29}\label{menu_8c_afaa16c2b36a1936671f280a3cb40ad29}} 
+\index{menu.\+c@{menu.\+c}!login@{login}}
+\index{login@{login}!menu.\+c@{menu.\+c}}
+\subsubsection{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily void login (\begin{DoxyParamCaption}\item[{\hyperlink{head__strutture_8h_a784ca7b7fa64cbb661eb0c903348c1ce}{sessione\+\_\+t} $\ast$}]{se }\end{DoxyParamCaption})}
+
+
+
+Gestisce l\textquotesingle{}accesso di un dipendente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+\_\+t} & $\ast$sessione \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{menu_8c_a96fb221481623d0f77e6fd1e6f7ad118}\label{menu_8c_a96fb221481623d0f77e6fd1e6f7ad118}} 
+\index{menu.\+c@{menu.\+c}!menu\+\_\+nextmove@{menu\+\_\+nextmove}}
+\index{menu\+\_\+nextmove@{menu\+\_\+nextmove}!menu.\+c@{menu.\+c}}
+\subsubsection{\texorpdfstring{menu\+\_\+nextmove()}{menu\_nextmove()}}
+{\footnotesize\ttfamily int menu\+\_\+nextmove (\begin{DoxyParamCaption}\item[{\hyperlink{head__strutture_8h_a784ca7b7fa64cbb661eb0c903348c1ce}{sessione\+\_\+t} $\ast$}]{se }\end{DoxyParamCaption})}
+
+
+
+Imposta la prossima azione del programma. 
+
+In base alla scelta presente all\textquotesingle{}interno della sessione richiama i metodi necessari per la visualizzazione e il comportamento del menu\textquotesingle{} scelto, impostando i parametri della sessione se necessario.~\newline
+Ritorna C\+H\+I\+U\+DI se e\textquotesingle{} la scelta in sessione era un chiudi, altrimenti ritorna 0. 
+\begin{DoxyParams}{Parameters}
+{\em sessione\+\_\+t} & $\ast$se \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{menu_8c_adecccf77072a3787432afbfc4d87c4d8}\label{menu_8c_adecccf77072a3787432afbfc4d87c4d8}} 
+\index{menu.\+c@{menu.\+c}!show\+\_\+clienti\+\_\+menu@{show\+\_\+clienti\+\_\+menu}}
+\index{show\+\_\+clienti\+\_\+menu@{show\+\_\+clienti\+\_\+menu}!menu.\+c@{menu.\+c}}
+\subsubsection{\texorpdfstring{show\+\_\+clienti\+\_\+menu()}{show\_clienti\_menu()}}
+{\footnotesize\ttfamily void show\+\_\+clienti\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mostra l\textquotesingle{}interfaccia grafica del menu\textquotesingle{} principale clienti. 
+
+\mbox{\Hypertarget{menu_8c_a92366c9bd30febe9b239551d133525f1}\label{menu_8c_a92366c9bd30febe9b239551d133525f1}} 
+\index{menu.\+c@{menu.\+c}!show\+\_\+dipendenti\+\_\+menu@{show\+\_\+dipendenti\+\_\+menu}}
+\index{show\+\_\+dipendenti\+\_\+menu@{show\+\_\+dipendenti\+\_\+menu}!menu.\+c@{menu.\+c}}
+\subsubsection{\texorpdfstring{show\+\_\+dipendenti\+\_\+menu()}{show\_dipendenti\_menu()}}
+{\footnotesize\ttfamily void show\+\_\+dipendenti\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mostra l\textquotesingle{}interfaccia grafica del menu\textquotesingle{} principale dipendenti. 
+
+\mbox{\Hypertarget{menu_8c_a0c94e4af9357a56b13dc6cf246a8fb92}\label{menu_8c_a0c94e4af9357a56b13dc6cf246a8fb92}} 
+\index{menu.\+c@{menu.\+c}!show\+\_\+log\+\_\+menu@{show\+\_\+log\+\_\+menu}}
+\index{show\+\_\+log\+\_\+menu@{show\+\_\+log\+\_\+menu}!menu.\+c@{menu.\+c}}
+\subsubsection{\texorpdfstring{show\+\_\+log\+\_\+menu()}{show\_log\_menu()}}
+{\footnotesize\ttfamily void show\+\_\+log\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mostra l\textquotesingle{}interfaccia grafica del menu\textquotesingle{} log. 
+
+\mbox{\Hypertarget{menu_8c_aa510a50efd9498c295969cf173fc6337}\label{menu_8c_aa510a50efd9498c295969cf173fc6337}} 
+\index{menu.\+c@{menu.\+c}!show\+\_\+nolog\+\_\+menu@{show\+\_\+nolog\+\_\+menu}}
+\index{show\+\_\+nolog\+\_\+menu@{show\+\_\+nolog\+\_\+menu}!menu.\+c@{menu.\+c}}
+\subsubsection{\texorpdfstring{show\+\_\+nolog\+\_\+menu()}{show\_nolog\_menu()}}
+{\footnotesize\ttfamily void show\+\_\+nolog\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mostra l\textquotesingle{}interfaccia grafica del menu\textquotesingle{} nolog. 
+
+\mbox{\Hypertarget{menu_8c_a4f9be92c193bf45a9635e3c00bddc030}\label{menu_8c_a4f9be92c193bf45a9635e3c00bddc030}} 
+\index{menu.\+c@{menu.\+c}!show\+\_\+novita\+\_\+menu@{show\+\_\+novita\+\_\+menu}}
+\index{show\+\_\+novita\+\_\+menu@{show\+\_\+novita\+\_\+menu}!menu.\+c@{menu.\+c}}
+\subsubsection{\texorpdfstring{show\+\_\+novita\+\_\+menu()}{show\_novita\_menu()}}
+{\footnotesize\ttfamily void show\+\_\+novita\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mostra l\textquotesingle{}interfaccia grafica del menu\textquotesingle{} principale novita\textquotesingle{}. 
+
+\mbox{\Hypertarget{menu_8c_ac9b4d8c08fe2a2db50c306d3c150ca28}\label{menu_8c_ac9b4d8c08fe2a2db50c306d3c150ca28}} 
+\index{menu.\+c@{menu.\+c}!show\+\_\+ordinamento\+\_\+persone\+\_\+menu@{show\+\_\+ordinamento\+\_\+persone\+\_\+menu}}
+\index{show\+\_\+ordinamento\+\_\+persone\+\_\+menu@{show\+\_\+ordinamento\+\_\+persone\+\_\+menu}!menu.\+c@{menu.\+c}}
+\subsubsection{\texorpdfstring{show\+\_\+ordinamento\+\_\+persone\+\_\+menu()}{show\_ordinamento\_persone\_menu()}}
+{\footnotesize\ttfamily void show\+\_\+ordinamento\+\_\+persone\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mostra l\textquotesingle{}interfaccia grafica del menu\textquotesingle{} per la scelta del tipo di ordinamento per dipendenti e clienti. 
+
+\mbox{\Hypertarget{menu_8c_a6b162ea688a7c5a59e96e8177dfda86d}\label{menu_8c_a6b162ea688a7c5a59e96e8177dfda86d}} 
+\index{menu.\+c@{menu.\+c}!show\+\_\+ordinamento\+\_\+prodotti\+\_\+menu@{show\+\_\+ordinamento\+\_\+prodotti\+\_\+menu}}
+\index{show\+\_\+ordinamento\+\_\+prodotti\+\_\+menu@{show\+\_\+ordinamento\+\_\+prodotti\+\_\+menu}!menu.\+c@{menu.\+c}}
+\subsubsection{\texorpdfstring{show\+\_\+ordinamento\+\_\+prodotti\+\_\+menu()}{show\_ordinamento\_prodotti\_menu()}}
+{\footnotesize\ttfamily void show\+\_\+ordinamento\+\_\+prodotti\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mostra l\textquotesingle{}interfaccia grafica del menu\textquotesingle{} per la scelta del tipo di ordinamento per i prodotti. 
+
+\mbox{\Hypertarget{menu_8c_aad25e471acaffe14832ddc5437f41c6d}\label{menu_8c_aad25e471acaffe14832ddc5437f41c6d}} 
+\index{menu.\+c@{menu.\+c}!show\+\_\+prodotti\+\_\+menu@{show\+\_\+prodotti\+\_\+menu}}
+\index{show\+\_\+prodotti\+\_\+menu@{show\+\_\+prodotti\+\_\+menu}!menu.\+c@{menu.\+c}}
+\subsubsection{\texorpdfstring{show\+\_\+prodotti\+\_\+menu()}{show\_prodotti\_menu()}}
+{\footnotesize\ttfamily void show\+\_\+prodotti\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mostra l\textquotesingle{}interfaccia grafica del menu\textquotesingle{} principale prodotti. 
+

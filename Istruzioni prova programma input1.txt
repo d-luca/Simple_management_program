@@ -1,0 +1,28 @@
+Il programma e' un normale gestionale, seguire i comandi del programma per un corretto utilizzo.
+Si consiglia di allargare un poco la finestra per la visione corretta della formattazione.
+I file verranno creati automaticamente durante l'esecuzione se non presenti.
+Al momento di necessita', verra' anche introdotto un record di default nel file dipendenti.txt (cosi'sara' impossibile rimanere senza un possibile login).
+ATTENZIONE: Non modificare per nessun motivo manualmente i file, i campi dei record sono settati ad hoc per una corretta esecuzione del programma, una qualsiasi modifica impropria comporterebbe risultati errati ed inaspettati.
+
+Spostare i file della cartella input nella stessa cartella del file da eseguire (il programma li creerebbe automaticamente se non ci fossero)
+
+Su prodotti:
+elimino prodotto 3
+elimino prodotto 1
+elimino prodotto 7
+elimino prodotto 4
+Inserisco un prodotto (gli verra' assegnato l'ID 1)
+Inserisco un prodotto (gli verra' assegnato l'ID 3)
+Inserisco un prodotto (gli verra' assegnato l'ID 4)
+Inserisco un prodotto (gli verra' assegnato l'ID 7)
+
+Su dipendenti:
+Inserisco un dipendente (gli verra' assegnato l'ID 11)
+Elimino il dipendente 4
+Inserisco un dipendente (gli verra' assegnato l'ID 4)
+modifico il record 6
+
+Su clienti:
+Inserisco un dipendente (gli verra' assegnato l'ID 1)
+Inserisco un dipendente (gli verra' assegnato l'ID 2)
+Elimino record 1

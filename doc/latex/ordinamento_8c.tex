@@ -1,0 +1,119 @@
+\hypertarget{ordinamento_8c}{}\section{src/ordinamento.c File Reference}
+\label{ordinamento_8c}\index{src/ordinamento.\+c@{src/ordinamento.\+c}}
+{\ttfamily \#include \char`\"{}head\+\_\+ordinamento.\+h\char`\"{}}\newline
+Include dependency graph for ordinamento.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{ordinamento_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{ordinamento_8c_a3bc01b8dc1cfe1be1a3c7ac22af0c183}{destroy\+\_\+tree} (\hyperlink{head__strutture_8h_a4ef1b6d5b50a013be973ef01962dc932}{tree\+\_\+node\+\_\+t} $\ast$n)
+\begin{DoxyCompactList}\small\item\em Libera la memoria allocata dell\textquotesingle{}albero a partire dal nodo passato come parametro. \end{DoxyCompactList}\item 
+void \hyperlink{ordinamento_8c_a3ee60e03d675a4b6c5f3e23b126142cd}{insert\+\_\+key\+\_\+prodotti} (\hyperlink{head__strutture_8h_afec16ee1fceb6c05f4be3538f36b1997}{prodotto\+\_\+t} $\ast$record, \hyperlink{head__strutture_8h_a4ef1b6d5b50a013be973ef01962dc932}{tree\+\_\+node\+\_\+t} $\ast$$\ast$n, \hyperlink{head__strutture_8h_a3da5d27de6c586fecb3c1412cc6f1265}{campo\+\_\+record\+\_\+t} campo)
+\begin{DoxyCompactList}\small\item\em Inserisce il record nella posizione giusta dell\textquotesingle{}albero, la cui radice e\textquotesingle{} il nodo passato come parametro. \end{DoxyCompactList}\item 
+void \hyperlink{ordinamento_8c_a106d61401ba95025e29d6726736c03de}{insert\+\_\+key\+\_\+persone} (\hyperlink{head__strutture_8h_a58439881922e3f6e7ed51e352f2a0c1c}{persona\+\_\+t} $\ast$record, \hyperlink{head__strutture_8h_a4ef1b6d5b50a013be973ef01962dc932}{tree\+\_\+node\+\_\+t} $\ast$$\ast$n, \hyperlink{head__strutture_8h_a3da5d27de6c586fecb3c1412cc6f1265}{campo\+\_\+record\+\_\+t} campo)
+\begin{DoxyCompactList}\small\item\em Inserisce il record nella posizione giusta dell\textquotesingle{}albero, la cui radice e\textquotesingle{} il nodo passato come parametro. \end{DoxyCompactList}\item 
+void \hyperlink{ordinamento_8c_a6bdfab8e39d9f55f2213b9ecffddf816}{print\+\_\+tree} (\hyperlink{head__strutture_8h_a4ef1b6d5b50a013be973ef01962dc932}{tree\+\_\+node\+\_\+t} $\ast$$\ast$n, \hyperlink{head__strutture_8h_ad83512da590021d7b336c3cb314dc228}{tipofile\+\_\+t} tipo)
+\begin{DoxyCompactList}\small\item\em Stampa l\textquotesingle{}albero a partire dal nodo passato come parametro, e\textquotesingle{} necessario specificare il tipo file che si usera\textquotesingle{}. \end{DoxyCompactList}\item 
+void \hyperlink{ordinamento_8c_a18de588a8118a4cbda403d11b1dbaf16}{print\+\_\+file} (\hyperlink{head__strutture_8h_ad83512da590021d7b336c3cb314dc228}{tipofile\+\_\+t} tipo, \hyperlink{head__strutture_8h_a3da5d27de6c586fecb3c1412cc6f1265}{campo\+\_\+record\+\_\+t} campo)
+\begin{DoxyCompactList}\small\item\em Stampa l\textquotesingle{}intero file selezionato datl tipo file passato come parametro, ordinato a seconda del campo passato come parametro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contiene i metodi inerenti alla creazione di un albero binario ordinato, e alla visualizzazione di esso. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{ordinamento_8c_a3bc01b8dc1cfe1be1a3c7ac22af0c183}\label{ordinamento_8c_a3bc01b8dc1cfe1be1a3c7ac22af0c183}} 
+\index{ordinamento.\+c@{ordinamento.\+c}!destroy\+\_\+tree@{destroy\+\_\+tree}}
+\index{destroy\+\_\+tree@{destroy\+\_\+tree}!ordinamento.\+c@{ordinamento.\+c}}
+\subsubsection{\texorpdfstring{destroy\+\_\+tree()}{destroy\_tree()}}
+{\footnotesize\ttfamily void destroy\+\_\+tree (\begin{DoxyParamCaption}\item[{\hyperlink{head__strutture_8h_a4ef1b6d5b50a013be973ef01962dc932}{tree\+\_\+node\+\_\+t} $\ast$}]{n }\end{DoxyParamCaption})}
+
+
+
+Libera la memoria allocata dell\textquotesingle{}albero a partire dal nodo passato come parametro. 
+
+Se viene passata la radice, tutta la memoria allocata delll\textquotesingle{}albero verra\textquotesingle{} liberata. 
+\begin{DoxyParams}{Parameters}
+{\em tree\+\_\+node\+\_\+t} & $\ast$ nodo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ordinamento_8c_a106d61401ba95025e29d6726736c03de}\label{ordinamento_8c_a106d61401ba95025e29d6726736c03de}} 
+\index{ordinamento.\+c@{ordinamento.\+c}!insert\+\_\+key\+\_\+persone@{insert\+\_\+key\+\_\+persone}}
+\index{insert\+\_\+key\+\_\+persone@{insert\+\_\+key\+\_\+persone}!ordinamento.\+c@{ordinamento.\+c}}
+\subsubsection{\texorpdfstring{insert\+\_\+key\+\_\+persone()}{insert\_key\_persone()}}
+{\footnotesize\ttfamily void insert\+\_\+key\+\_\+persone (\begin{DoxyParamCaption}\item[{\hyperlink{head__strutture_8h_a58439881922e3f6e7ed51e352f2a0c1c}{persona\+\_\+t} $\ast$}]{record,  }\item[{\hyperlink{head__strutture_8h_a4ef1b6d5b50a013be973ef01962dc932}{tree\+\_\+node\+\_\+t} $\ast$$\ast$}]{n,  }\item[{\hyperlink{head__strutture_8h_a3da5d27de6c586fecb3c1412cc6f1265}{campo\+\_\+record\+\_\+t}}]{campo }\end{DoxyParamCaption})}
+
+
+
+Inserisce il record nella posizione giusta dell\textquotesingle{}albero, la cui radice e\textquotesingle{} il nodo passato come parametro. 
+
+E\textquotesingle{} possibile sceglire il campo da considerare per l\textquotesingle{}ordinamento. 
+\begin{DoxyParams}{Parameters}
+{\em persona\+\_\+t} & $\ast$record \\
+\hline
+{\em tree\+\_\+node\+\_\+t} & $\ast$$\ast$radice \\
+\hline
+{\em campo\+\_\+record\+\_\+t} & campo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ordinamento_8c_a3ee60e03d675a4b6c5f3e23b126142cd}\label{ordinamento_8c_a3ee60e03d675a4b6c5f3e23b126142cd}} 
+\index{ordinamento.\+c@{ordinamento.\+c}!insert\+\_\+key\+\_\+prodotti@{insert\+\_\+key\+\_\+prodotti}}
+\index{insert\+\_\+key\+\_\+prodotti@{insert\+\_\+key\+\_\+prodotti}!ordinamento.\+c@{ordinamento.\+c}}
+\subsubsection{\texorpdfstring{insert\+\_\+key\+\_\+prodotti()}{insert\_key\_prodotti()}}
+{\footnotesize\ttfamily void insert\+\_\+key\+\_\+prodotti (\begin{DoxyParamCaption}\item[{\hyperlink{head__strutture_8h_afec16ee1fceb6c05f4be3538f36b1997}{prodotto\+\_\+t} $\ast$}]{record,  }\item[{\hyperlink{head__strutture_8h_a4ef1b6d5b50a013be973ef01962dc932}{tree\+\_\+node\+\_\+t} $\ast$$\ast$}]{n,  }\item[{\hyperlink{head__strutture_8h_a3da5d27de6c586fecb3c1412cc6f1265}{campo\+\_\+record\+\_\+t}}]{campo }\end{DoxyParamCaption})}
+
+
+
+Inserisce il record nella posizione giusta dell\textquotesingle{}albero, la cui radice e\textquotesingle{} il nodo passato come parametro. 
+
+E\textquotesingle{} possibile sceglire il campo da considerare per l\textquotesingle{}ordinamento. 
+\begin{DoxyParams}{Parameters}
+{\em prodotto\+\_\+t} & $\ast$record \\
+\hline
+{\em tree\+\_\+node\+\_\+t} & $\ast$$\ast$radice \\
+\hline
+{\em campo\+\_\+record\+\_\+t} & campo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000001}{Bug}]L\textquotesingle{}ordinamento alfabetico funziona cosi\textquotesingle{} per ora\+: ordinamento alfabetico sulla prima lettera del nome e se uguale mette prima quello con id minore (si sa\textquotesingle{} il perche\textquotesingle{}) \end{DoxyRefDesc}
+\mbox{\Hypertarget{ordinamento_8c_a18de588a8118a4cbda403d11b1dbaf16}\label{ordinamento_8c_a18de588a8118a4cbda403d11b1dbaf16}} 
+\index{ordinamento.\+c@{ordinamento.\+c}!print\+\_\+file@{print\+\_\+file}}
+\index{print\+\_\+file@{print\+\_\+file}!ordinamento.\+c@{ordinamento.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+file()}{print\_file()}}
+{\footnotesize\ttfamily void print\+\_\+file (\begin{DoxyParamCaption}\item[{\hyperlink{head__strutture_8h_ad83512da590021d7b336c3cb314dc228}{tipofile\+\_\+t}}]{tipo,  }\item[{\hyperlink{head__strutture_8h_a3da5d27de6c586fecb3c1412cc6f1265}{campo\+\_\+record\+\_\+t}}]{campo }\end{DoxyParamCaption})}
+
+
+
+Stampa l\textquotesingle{}intero file selezionato datl tipo file passato come parametro, ordinato a seconda del campo passato come parametro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tipofile\+\_\+t} & tipo \\
+\hline
+{\em campo\+\_\+record\+\_\+t} & campo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ordinamento_8c_a6bdfab8e39d9f55f2213b9ecffddf816}\label{ordinamento_8c_a6bdfab8e39d9f55f2213b9ecffddf816}} 
+\index{ordinamento.\+c@{ordinamento.\+c}!print\+\_\+tree@{print\+\_\+tree}}
+\index{print\+\_\+tree@{print\+\_\+tree}!ordinamento.\+c@{ordinamento.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+tree()}{print\_tree()}}
+{\footnotesize\ttfamily void print\+\_\+tree (\begin{DoxyParamCaption}\item[{\hyperlink{head__strutture_8h_a4ef1b6d5b50a013be973ef01962dc932}{tree\+\_\+node\+\_\+t} $\ast$$\ast$}]{n,  }\item[{\hyperlink{head__strutture_8h_ad83512da590021d7b336c3cb314dc228}{tipofile\+\_\+t}}]{tipo }\end{DoxyParamCaption})}
+
+
+
+Stampa l\textquotesingle{}albero a partire dal nodo passato come parametro, e\textquotesingle{} necessario specificare il tipo file che si usera\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree\+\_\+node\+\_\+t} & $\ast$$\ast$nodo \\
+\hline
+{\em tipofile\+\_\+t} & tipo \\
+\hline
+\end{DoxyParams}

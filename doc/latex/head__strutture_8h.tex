@@ -1,0 +1,604 @@
+\hypertarget{head__strutture_8h}{}\section{src/head\+\_\+strutture.h File Reference}
+\label{head__strutture_8h}\index{src/head\+\_\+strutture.\+h@{src/head\+\_\+strutture.\+h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+Include dependency graph for head\+\_\+strutture.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{head__strutture_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{head__strutture_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structprodotto}{prodotto}
+\begin{DoxyCompactList}\small\item\em Struttura dati Prodotto. \end{DoxyCompactList}\item 
+struct \hyperlink{structpersona}{persona}
+\begin{DoxyCompactList}\small\item\em Struttura dati Persona. \end{DoxyCompactList}\item 
+struct \hyperlink{structsessione}{sessione}
+\begin{DoxyCompactList}\small\item\em Struttura dati Sessione. \end{DoxyCompactList}\item 
+struct \hyperlink{structtree__node}{tree\+\_\+node}
+\begin{DoxyCompactList}\small\item\em Struttura dati tree\+\_\+noode.~\newline
+Definisce un nodo di un albero binario.~\newline
+Puo\textquotesingle{} essere usato sia per le strutture prodotti che per quelle persona, per questo e\textquotesingle{} presente un componente per ciascuno. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{head__strutture_8h_acdbdd133f0d7b6204e88098f8fb431da}{D\+E\+F\+I\+N\+I\+Z\+I\+O\+NI}
+\item 
+\#define \hyperlink{head__strutture_8h_adb31c7df85b5ee0c0604304f7dacea5b}{N\+O\+V\+I\+T\+A\+\_\+\+L\+E\+N\+G\+TH}~401
+\item 
+\#define \hyperlink{head__strutture_8h_a4062b22785fbd1c2eeb0d4b227511c18}{P\+E\+R\+S\+O\+N\+E\+\_\+\+L\+E\+N\+G\+TH}~20
+\item 
+\#define \hyperlink{head__strutture_8h_a07c12b5e330257e579730be4cb1183f3}{P\+R\+O\+D\+O\+T\+T\+I\+\_\+\+L\+E\+N\+G\+TH}~40
+\item 
+\#define \hyperlink{head__strutture_8h_a02a2d760654535b960eb191cc7d10bd7}{I\+D\+\_\+\+P\+E\+R\+S\+O\+N\+E\+\_\+\+L\+E\+N\+G\+TH}~5
+\item 
+\#define \hyperlink{head__strutture_8h_adf3e9636b5c21628547f626ff5ed9900}{I\+D\+\_\+\+P\+R\+O\+D\+O\+T\+T\+I\+\_\+\+L\+E\+N\+G\+TH}~10
+\item 
+\#define \hyperlink{head__strutture_8h_a7ffe50908e1b466b1f5dc694bf22b4c9}{N\+O\+M\+E\+\_\+\+D\+E\+F\+A\+U\+LT}~\char`\"{}default\char`\"{}
+\item 
+\#define \hyperlink{head__strutture_8h_ae4e9644c3fad61b59eb511bdfa00d66e}{C\+O\+G\+N\+O\+M\+E\+\_\+\+D\+E\+F\+A\+U\+LT}~\char`\"{}default\char`\"{}
+\item 
+\#define \hyperlink{head__strutture_8h_ac1cef138404e8b6ca16f328a0c999a1b}{I\+D\+\_\+\+D\+E\+F\+A\+U\+LT}~1
+\item 
+\#define \hyperlink{head__strutture_8h_a21dcded73c8cbdff1f457fb8885037f2}{P\+S\+W\+\_\+\+D\+E\+F\+A\+U\+LT}~\char`\"{}default\char`\"{}
+\item 
+\#define \hyperlink{head__strutture_8h_a34834adb1037d7bdd8f31f97fd1c3b51}{D\+E\+F\+A\+U\+L\+T\+\_\+\+I\+D\+\_\+\+S\+E\+S\+S\+I\+ON}~0
+\item 
+\#define \hyperlink{head__strutture_8h_a10220eb5edbdde03056f5060c11c0b15}{D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+S\+W\+\_\+\+S\+E\+S\+S\+I\+ON}~\char`\"{}password\char`\"{}
+\item 
+\#define \hyperlink{head__strutture_8h_a46acf58c198f5756a3d120e33bfc2e46}{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+E\+NU}~\hyperlink{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5ba437577c424b4ee256943fac303178144}{nolog}
+\item 
+\#define \hyperlink{head__strutture_8h_a1bcf6fc7b5c5bbae56a592b0ef9d91e2}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+E\+L\+TA}~0
+\item 
+\#define \hyperlink{head__strutture_8h_ac8b9e41b417d106b76d0f66d9edd1559}{E\+N\+U\+M\+E\+R\+A\+T\+O\+RI}
+\item 
+\#define \hyperlink{head__strutture_8h_ab96fd9044fe06617b2cf818b78e2a50e}{S\+T\+R\+U\+T\+T\+U\+RE}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{head__strutture_8h_a20f710d6a73f95164e79b59ee0b883c2}{campo\+\_\+record} \hyperlink{head__strutture_8h_a3da5d27de6c586fecb3c1412cc6f1265}{campo\+\_\+record\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Indica il campo scelto nella selezione di ordinamento. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5b}{menu} \hyperlink{head__strutture_8h_a27938a0a874a833cfee26456c5d730b1}{menu\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Indica il tipo di menu\textquotesingle{} che deve essere visualizzato. \end{DoxyCompactList}\item 
+typedef enum \hyperlink{head__strutture_8h_a7685164e8daeb6c2998e408a80d9ea05}{tipofile} \hyperlink{head__strutture_8h_ad83512da590021d7b336c3cb314dc228}{tipofile\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Indica il file da usare. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structprodotto}{prodotto} \hyperlink{head__strutture_8h_afec16ee1fceb6c05f4be3538f36b1997}{prodotto\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struttura dati Prodotto. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structpersona}{persona} \hyperlink{head__strutture_8h_a58439881922e3f6e7ed51e352f2a0c1c}{persona\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struttura dati Persona. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structsessione}{sessione} \hyperlink{head__strutture_8h_a784ca7b7fa64cbb661eb0c903348c1ce}{sessione\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struttura dati Sessione. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structtree__node}{tree\+\_\+node} \hyperlink{head__strutture_8h_a4ef1b6d5b50a013be973ef01962dc932}{tree\+\_\+node\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struttura dati tree\+\_\+noode.~\newline
+Definisce un nodo di un albero binario.~\newline
+Puo\textquotesingle{} essere usato sia per le strutture prodotti che per quelle persona, per questo e\textquotesingle{} presente un componente per ciascuno. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{head__strutture_8h_a20f710d6a73f95164e79b59ee0b883c2}{campo\+\_\+record} \{ \newline
+\hyperlink{head__strutture_8h_a20f710d6a73f95164e79b59ee0b883c2acc4d0ac26924c7ec496b4805bdce5444}{nome}, 
+\hyperlink{head__strutture_8h_a20f710d6a73f95164e79b59ee0b883c2a80c5c59ca7d13a4954c27d4f9972d431}{cognome}, 
+\hyperlink{head__strutture_8h_a20f710d6a73f95164e79b59ee0b883c2a280d7329079c73a4a5df3f35697b60b1}{id}, 
+\hyperlink{head__strutture_8h_a20f710d6a73f95164e79b59ee0b883c2aea4067ceb66474a1327144e0fda3de76}{alfabetico}, 
+\newline
+\hyperlink{head__strutture_8h_a20f710d6a73f95164e79b59ee0b883c2a358fe02920fdff94e70e8d7d18e2f7d5}{prezzo}
+ \}\begin{DoxyCompactList}\small\item\em Indica il campo scelto nella selezione di ordinamento. \end{DoxyCompactList}
+\item 
+enum \hyperlink{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5b}{menu} \{ \newline
+\hyperlink{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5ba437577c424b4ee256943fac303178144}{nolog}, 
+\hyperlink{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5baaac8d4ee23e2d305f0b0a575cda066f3}{log}, 
+\hyperlink{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5ba4b7a71d241e4df8affb579af19cc162a}{novita}, 
+\hyperlink{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5ba5af3458aa4329a4359519e5057d1c91a}{prodotti}, 
+\newline
+\hyperlink{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5ba3e2eb8b6a1fc0e7e62eefcabd7829e90}{clienti}, 
+\hyperlink{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5bad52548f382e3e0c4a3f3fd83fc8cb99d}{dipendenti}, 
+\hyperlink{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5ba3671359f0dc7811af63e725834dc8137}{ordinamentoP}, 
+\hyperlink{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5ba31b9a9fb36611f86c2f20a32c5dda7a7}{ordinamentoC}, 
+\newline
+\hyperlink{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5baca37cab8ed1f4e68b81d33133a3fd0e2}{ordinamentoD}
+ \}\begin{DoxyCompactList}\small\item\em Indica il tipo di menu\textquotesingle{} che deve essere visualizzato. \end{DoxyCompactList}
+\item 
+enum \hyperlink{head__strutture_8h_a7685164e8daeb6c2998e408a80d9ea05}{tipofile} \{ \hyperlink{head__strutture_8h_a7685164e8daeb6c2998e408a80d9ea05a92b14cce3e165acfbfe29c53d46c5ee1}{prod}, 
+\hyperlink{head__strutture_8h_a7685164e8daeb6c2998e408a80d9ea05a0ce60226ab327f0febfe23863e3160e1}{clie}, 
+\hyperlink{head__strutture_8h_a7685164e8daeb6c2998e408a80d9ea05ac812e56c599a31d53e2b3dc32494d7ec}{dipe}
+ \}\begin{DoxyCompactList}\small\item\em Indica il file da usare. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{head__strutture_8h_af2763b0dcb4f38febe8620bb4f65736d}{initialize\+\_\+session} (\hyperlink{head__strutture_8h_a784ca7b7fa64cbb661eb0c903348c1ce}{sessione\+\_\+t} $\ast$se)
+\begin{DoxyCompactList}\small\item\em Inizializza le componenti di una struttura sessione. \end{DoxyCompactList}\item 
+void \hyperlink{head__strutture_8h_ae517940db604a664f340a08b4c1b1ee3}{initialize\+\_\+prodotto} (\hyperlink{head__strutture_8h_afec16ee1fceb6c05f4be3538f36b1997}{prodotto\+\_\+t} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Inizializza le componenti di una struttura prodotto. \end{DoxyCompactList}\item 
+void \hyperlink{head__strutture_8h_a973195d321eed8af362eac78b711fd0f}{initialize\+\_\+persona} (\hyperlink{head__strutture_8h_a58439881922e3f6e7ed51e352f2a0c1c}{persona\+\_\+t} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Inizializza le componenti di una struttura persona. \end{DoxyCompactList}\item 
+void \hyperlink{head__strutture_8h_ad95b3b50d33dc0d99ce72e61aefe65e6}{get\+\_\+string} (char $\ast$stringa, int lunghezza)
+\begin{DoxyCompactList}\small\item\em Estrae da stdin una stringa di lunghezza massima data e la mette nella stringa passata come parametro, pone sempre \textbackslash{}0 alla fine. \end{DoxyCompactList}\item 
+void \hyperlink{head__strutture_8h_ac85ae6df551b530c1638d7ebc48ab48a}{get\+\_\+string\+\_\+file} (char $\ast$stringa, int lunghezza, F\+I\+LE $\ast$fp)
+\begin{DoxyCompactList}\small\item\em Estrae dal file passato come parametro una stringa di lunghezza massima data e la mette nella stringa passata come parametro, pone sempre \textbackslash{}0 alla fine. \end{DoxyCompactList}\item 
+void \hyperlink{head__strutture_8h_a4717013d0abaa8c175dafda3925c3931}{get\+\_\+persona} (\hyperlink{head__strutture_8h_a58439881922e3f6e7ed51e352f2a0c1c}{persona\+\_\+t} $\ast$\hyperlink{structpersona}{persona}, F\+I\+LE $\ast$fp)
+\begin{DoxyCompactList}\small\item\em Carica in persona i dati di una riga del file clienti.\+txt o dipendenti.\+txt. \end{DoxyCompactList}\item 
+void \hyperlink{head__strutture_8h_a8f08cdbfd563b68a75bef38e80c16cbc}{get\+\_\+prodotto} (\hyperlink{head__strutture_8h_afec16ee1fceb6c05f4be3538f36b1997}{prodotto\+\_\+t} $\ast$\hyperlink{structprodotto}{prodotto}, F\+I\+LE $\ast$fp)
+\begin{DoxyCompactList}\small\item\em Carica in prodotto i dati di una riga del file prodotti.\+txt. \end{DoxyCompactList}\item 
+int \hyperlink{head__strutture_8h_ac472caf5ab5d1500de32eb9389419a0d}{is\+\_\+unum} (char $\ast$stringa)
+\begin{DoxyCompactList}\small\item\em Controlla se la stringa passata come parametro contiene solo caratteri numerici interi senza segno. \end{DoxyCompactList}\item 
+int \hyperlink{head__strutture_8h_a80d803c9093f8a72403d83adbaee7c42}{is\+\_\+num} (char $\ast$stringa)
+\begin{DoxyCompactList}\small\item\em Controlla se la stringa passata come parametro contiene solo caratteri numerici interi con segno. \end{DoxyCompactList}\item 
+int \hyperlink{head__strutture_8h_ad112c9780a37fb8cd6c53e0475fbdc3c}{is\+\_\+ufnum} (char $\ast$stringa)
+\begin{DoxyCompactList}\small\item\em Controlla se la stringa passata come parametro contiene solo caratteri numerici interi o non senza segno. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contiene le definizioni dei metodi, le strutture, gli enumeratori che potrebbero essere usati da altri file.~\newline
+In particolare sono presenti i metodi per inizzializzare tipi struttura, metodi di controllo di consistenza, metodi per recuperare record dai vari file. 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{head__strutture_8h_ae4e9644c3fad61b59eb511bdfa00d66e}\label{head__strutture_8h_ae4e9644c3fad61b59eb511bdfa00d66e}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!C\+O\+G\+N\+O\+M\+E\+\_\+\+D\+E\+F\+A\+U\+LT@{C\+O\+G\+N\+O\+M\+E\+\_\+\+D\+E\+F\+A\+U\+LT}}
+\index{C\+O\+G\+N\+O\+M\+E\+\_\+\+D\+E\+F\+A\+U\+LT@{C\+O\+G\+N\+O\+M\+E\+\_\+\+D\+E\+F\+A\+U\+LT}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+G\+N\+O\+M\+E\+\_\+\+D\+E\+F\+A\+U\+LT}{COGNOME\_DEFAULT}}
+{\footnotesize\ttfamily \#define C\+O\+G\+N\+O\+M\+E\+\_\+\+D\+E\+F\+A\+U\+LT~\char`\"{}default\char`\"{}}
+
+\mbox{\Hypertarget{head__strutture_8h_a34834adb1037d7bdd8f31f97fd1c3b51}\label{head__strutture_8h_a34834adb1037d7bdd8f31f97fd1c3b51}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!D\+E\+F\+A\+U\+L\+T\+\_\+\+I\+D\+\_\+\+S\+E\+S\+S\+I\+ON@{D\+E\+F\+A\+U\+L\+T\+\_\+\+I\+D\+\_\+\+S\+E\+S\+S\+I\+ON}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+I\+D\+\_\+\+S\+E\+S\+S\+I\+ON@{D\+E\+F\+A\+U\+L\+T\+\_\+\+I\+D\+\_\+\+S\+E\+S\+S\+I\+ON}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+I\+D\+\_\+\+S\+E\+S\+S\+I\+ON}{DEFAULT\_ID\_SESSION}}
+{\footnotesize\ttfamily \#define D\+E\+F\+A\+U\+L\+T\+\_\+\+I\+D\+\_\+\+S\+E\+S\+S\+I\+ON~0}
+
+\mbox{\Hypertarget{head__strutture_8h_a46acf58c198f5756a3d120e33bfc2e46}\label{head__strutture_8h_a46acf58c198f5756a3d120e33bfc2e46}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+E\+NU@{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+E\+NU}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+E\+NU@{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+E\+NU}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+E\+NU}{DEFAULT\_MENU}}
+{\footnotesize\ttfamily \#define D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+E\+NU~\hyperlink{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5ba437577c424b4ee256943fac303178144}{nolog}}
+
+\mbox{\Hypertarget{head__strutture_8h_a10220eb5edbdde03056f5060c11c0b15}\label{head__strutture_8h_a10220eb5edbdde03056f5060c11c0b15}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+S\+W\+\_\+\+S\+E\+S\+S\+I\+ON@{D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+S\+W\+\_\+\+S\+E\+S\+S\+I\+ON}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+S\+W\+\_\+\+S\+E\+S\+S\+I\+ON@{D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+S\+W\+\_\+\+S\+E\+S\+S\+I\+ON}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+S\+W\+\_\+\+S\+E\+S\+S\+I\+ON}{DEFAULT\_PSW\_SESSION}}
+{\footnotesize\ttfamily \#define D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+S\+W\+\_\+\+S\+E\+S\+S\+I\+ON~\char`\"{}password\char`\"{}}
+
+\mbox{\Hypertarget{head__strutture_8h_a1bcf6fc7b5c5bbae56a592b0ef9d91e2}\label{head__strutture_8h_a1bcf6fc7b5c5bbae56a592b0ef9d91e2}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+E\+L\+TA@{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+E\+L\+TA}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+E\+L\+TA@{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+E\+L\+TA}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+E\+L\+TA}{DEFAULT\_SCELTA}}
+{\footnotesize\ttfamily \#define D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+E\+L\+TA~0}
+
+\mbox{\Hypertarget{head__strutture_8h_acdbdd133f0d7b6204e88098f8fb431da}\label{head__strutture_8h_acdbdd133f0d7b6204e88098f8fb431da}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!D\+E\+F\+I\+N\+I\+Z\+I\+O\+NI@{D\+E\+F\+I\+N\+I\+Z\+I\+O\+NI}}
+\index{D\+E\+F\+I\+N\+I\+Z\+I\+O\+NI@{D\+E\+F\+I\+N\+I\+Z\+I\+O\+NI}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+F\+I\+N\+I\+Z\+I\+O\+NI}{DEFINIZIONI}}
+{\footnotesize\ttfamily \#define D\+E\+F\+I\+N\+I\+Z\+I\+O\+NI}
+
+Blocco contenente le definizioni di tutte le macro. \mbox{\Hypertarget{head__strutture_8h_ac8b9e41b417d106b76d0f66d9edd1559}\label{head__strutture_8h_ac8b9e41b417d106b76d0f66d9edd1559}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!E\+N\+U\+M\+E\+R\+A\+T\+O\+RI@{E\+N\+U\+M\+E\+R\+A\+T\+O\+RI}}
+\index{E\+N\+U\+M\+E\+R\+A\+T\+O\+RI@{E\+N\+U\+M\+E\+R\+A\+T\+O\+RI}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{E\+N\+U\+M\+E\+R\+A\+T\+O\+RI}{ENUMERATORI}}
+{\footnotesize\ttfamily \#define E\+N\+U\+M\+E\+R\+A\+T\+O\+RI}
+
+Blocco contenente le definizioni di tutti gli enumeratori. \mbox{\Hypertarget{head__strutture_8h_ac1cef138404e8b6ca16f328a0c999a1b}\label{head__strutture_8h_ac1cef138404e8b6ca16f328a0c999a1b}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!I\+D\+\_\+\+D\+E\+F\+A\+U\+LT@{I\+D\+\_\+\+D\+E\+F\+A\+U\+LT}}
+\index{I\+D\+\_\+\+D\+E\+F\+A\+U\+LT@{I\+D\+\_\+\+D\+E\+F\+A\+U\+LT}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{I\+D\+\_\+\+D\+E\+F\+A\+U\+LT}{ID\_DEFAULT}}
+{\footnotesize\ttfamily \#define I\+D\+\_\+\+D\+E\+F\+A\+U\+LT~1}
+
+\mbox{\Hypertarget{head__strutture_8h_a02a2d760654535b960eb191cc7d10bd7}\label{head__strutture_8h_a02a2d760654535b960eb191cc7d10bd7}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!I\+D\+\_\+\+P\+E\+R\+S\+O\+N\+E\+\_\+\+L\+E\+N\+G\+TH@{I\+D\+\_\+\+P\+E\+R\+S\+O\+N\+E\+\_\+\+L\+E\+N\+G\+TH}}
+\index{I\+D\+\_\+\+P\+E\+R\+S\+O\+N\+E\+\_\+\+L\+E\+N\+G\+TH@{I\+D\+\_\+\+P\+E\+R\+S\+O\+N\+E\+\_\+\+L\+E\+N\+G\+TH}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{I\+D\+\_\+\+P\+E\+R\+S\+O\+N\+E\+\_\+\+L\+E\+N\+G\+TH}{ID\_PERSONE\_LENGTH}}
+{\footnotesize\ttfamily \#define I\+D\+\_\+\+P\+E\+R\+S\+O\+N\+E\+\_\+\+L\+E\+N\+G\+TH~5}
+
+\mbox{\Hypertarget{head__strutture_8h_adf3e9636b5c21628547f626ff5ed9900}\label{head__strutture_8h_adf3e9636b5c21628547f626ff5ed9900}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!I\+D\+\_\+\+P\+R\+O\+D\+O\+T\+T\+I\+\_\+\+L\+E\+N\+G\+TH@{I\+D\+\_\+\+P\+R\+O\+D\+O\+T\+T\+I\+\_\+\+L\+E\+N\+G\+TH}}
+\index{I\+D\+\_\+\+P\+R\+O\+D\+O\+T\+T\+I\+\_\+\+L\+E\+N\+G\+TH@{I\+D\+\_\+\+P\+R\+O\+D\+O\+T\+T\+I\+\_\+\+L\+E\+N\+G\+TH}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{I\+D\+\_\+\+P\+R\+O\+D\+O\+T\+T\+I\+\_\+\+L\+E\+N\+G\+TH}{ID\_PRODOTTI\_LENGTH}}
+{\footnotesize\ttfamily \#define I\+D\+\_\+\+P\+R\+O\+D\+O\+T\+T\+I\+\_\+\+L\+E\+N\+G\+TH~10}
+
+\mbox{\Hypertarget{head__strutture_8h_a7ffe50908e1b466b1f5dc694bf22b4c9}\label{head__strutture_8h_a7ffe50908e1b466b1f5dc694bf22b4c9}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!N\+O\+M\+E\+\_\+\+D\+E\+F\+A\+U\+LT@{N\+O\+M\+E\+\_\+\+D\+E\+F\+A\+U\+LT}}
+\index{N\+O\+M\+E\+\_\+\+D\+E\+F\+A\+U\+LT@{N\+O\+M\+E\+\_\+\+D\+E\+F\+A\+U\+LT}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{N\+O\+M\+E\+\_\+\+D\+E\+F\+A\+U\+LT}{NOME\_DEFAULT}}
+{\footnotesize\ttfamily \#define N\+O\+M\+E\+\_\+\+D\+E\+F\+A\+U\+LT~\char`\"{}default\char`\"{}}
+
+\mbox{\Hypertarget{head__strutture_8h_adb31c7df85b5ee0c0604304f7dacea5b}\label{head__strutture_8h_adb31c7df85b5ee0c0604304f7dacea5b}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!N\+O\+V\+I\+T\+A\+\_\+\+L\+E\+N\+G\+TH@{N\+O\+V\+I\+T\+A\+\_\+\+L\+E\+N\+G\+TH}}
+\index{N\+O\+V\+I\+T\+A\+\_\+\+L\+E\+N\+G\+TH@{N\+O\+V\+I\+T\+A\+\_\+\+L\+E\+N\+G\+TH}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{N\+O\+V\+I\+T\+A\+\_\+\+L\+E\+N\+G\+TH}{NOVITA\_LENGTH}}
+{\footnotesize\ttfamily \#define N\+O\+V\+I\+T\+A\+\_\+\+L\+E\+N\+G\+TH~401}
+
+\mbox{\Hypertarget{head__strutture_8h_a4062b22785fbd1c2eeb0d4b227511c18}\label{head__strutture_8h_a4062b22785fbd1c2eeb0d4b227511c18}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!P\+E\+R\+S\+O\+N\+E\+\_\+\+L\+E\+N\+G\+TH@{P\+E\+R\+S\+O\+N\+E\+\_\+\+L\+E\+N\+G\+TH}}
+\index{P\+E\+R\+S\+O\+N\+E\+\_\+\+L\+E\+N\+G\+TH@{P\+E\+R\+S\+O\+N\+E\+\_\+\+L\+E\+N\+G\+TH}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{P\+E\+R\+S\+O\+N\+E\+\_\+\+L\+E\+N\+G\+TH}{PERSONE\_LENGTH}}
+{\footnotesize\ttfamily \#define P\+E\+R\+S\+O\+N\+E\+\_\+\+L\+E\+N\+G\+TH~20}
+
+\mbox{\Hypertarget{head__strutture_8h_a07c12b5e330257e579730be4cb1183f3}\label{head__strutture_8h_a07c12b5e330257e579730be4cb1183f3}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!P\+R\+O\+D\+O\+T\+T\+I\+\_\+\+L\+E\+N\+G\+TH@{P\+R\+O\+D\+O\+T\+T\+I\+\_\+\+L\+E\+N\+G\+TH}}
+\index{P\+R\+O\+D\+O\+T\+T\+I\+\_\+\+L\+E\+N\+G\+TH@{P\+R\+O\+D\+O\+T\+T\+I\+\_\+\+L\+E\+N\+G\+TH}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{P\+R\+O\+D\+O\+T\+T\+I\+\_\+\+L\+E\+N\+G\+TH}{PRODOTTI\_LENGTH}}
+{\footnotesize\ttfamily \#define P\+R\+O\+D\+O\+T\+T\+I\+\_\+\+L\+E\+N\+G\+TH~40}
+
+\mbox{\Hypertarget{head__strutture_8h_a21dcded73c8cbdff1f457fb8885037f2}\label{head__strutture_8h_a21dcded73c8cbdff1f457fb8885037f2}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!P\+S\+W\+\_\+\+D\+E\+F\+A\+U\+LT@{P\+S\+W\+\_\+\+D\+E\+F\+A\+U\+LT}}
+\index{P\+S\+W\+\_\+\+D\+E\+F\+A\+U\+LT@{P\+S\+W\+\_\+\+D\+E\+F\+A\+U\+LT}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{P\+S\+W\+\_\+\+D\+E\+F\+A\+U\+LT}{PSW\_DEFAULT}}
+{\footnotesize\ttfamily \#define P\+S\+W\+\_\+\+D\+E\+F\+A\+U\+LT~\char`\"{}default\char`\"{}}
+
+\mbox{\Hypertarget{head__strutture_8h_ab96fd9044fe06617b2cf818b78e2a50e}\label{head__strutture_8h_ab96fd9044fe06617b2cf818b78e2a50e}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!S\+T\+R\+U\+T\+T\+U\+RE@{S\+T\+R\+U\+T\+T\+U\+RE}}
+\index{S\+T\+R\+U\+T\+T\+U\+RE@{S\+T\+R\+U\+T\+T\+U\+RE}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{S\+T\+R\+U\+T\+T\+U\+RE}{STRUTTURE}}
+{\footnotesize\ttfamily \#define S\+T\+R\+U\+T\+T\+U\+RE}
+
+Blocco contenente le definizioni di tutte le strutture. 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{head__strutture_8h_a3da5d27de6c586fecb3c1412cc6f1265}\label{head__strutture_8h_a3da5d27de6c586fecb3c1412cc6f1265}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!campo\+\_\+record\+\_\+t@{campo\+\_\+record\+\_\+t}}
+\index{campo\+\_\+record\+\_\+t@{campo\+\_\+record\+\_\+t}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{campo\+\_\+record\+\_\+t}{campo\_record\_t}}
+{\footnotesize\ttfamily typedef enum \hyperlink{head__strutture_8h_a20f710d6a73f95164e79b59ee0b883c2}{campo\+\_\+record}  \hyperlink{head__strutture_8h_a3da5d27de6c586fecb3c1412cc6f1265}{campo\+\_\+record\+\_\+t}}
+
+
+
+Indica il campo scelto nella selezione di ordinamento. 
+
+\mbox{\Hypertarget{head__strutture_8h_a27938a0a874a833cfee26456c5d730b1}\label{head__strutture_8h_a27938a0a874a833cfee26456c5d730b1}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!menu\+\_\+t@{menu\+\_\+t}}
+\index{menu\+\_\+t@{menu\+\_\+t}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{menu\+\_\+t}{menu\_t}}
+{\footnotesize\ttfamily typedef enum \hyperlink{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5b}{menu}  \hyperlink{head__strutture_8h_a27938a0a874a833cfee26456c5d730b1}{menu\+\_\+t}}
+
+
+
+Indica il tipo di menu\textquotesingle{} che deve essere visualizzato. 
+
+\mbox{\Hypertarget{head__strutture_8h_a58439881922e3f6e7ed51e352f2a0c1c}\label{head__strutture_8h_a58439881922e3f6e7ed51e352f2a0c1c}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!persona\+\_\+t@{persona\+\_\+t}}
+\index{persona\+\_\+t@{persona\+\_\+t}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{persona\+\_\+t}{persona\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structpersona}{persona} \hyperlink{head__strutture_8h_a58439881922e3f6e7ed51e352f2a0c1c}{persona\+\_\+t}}
+
+
+
+Struttura dati Persona. 
+
+\mbox{\Hypertarget{head__strutture_8h_afec16ee1fceb6c05f4be3538f36b1997}\label{head__strutture_8h_afec16ee1fceb6c05f4be3538f36b1997}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!prodotto\+\_\+t@{prodotto\+\_\+t}}
+\index{prodotto\+\_\+t@{prodotto\+\_\+t}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{prodotto\+\_\+t}{prodotto\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structprodotto}{prodotto}  \hyperlink{head__strutture_8h_afec16ee1fceb6c05f4be3538f36b1997}{prodotto\+\_\+t}}
+
+
+
+Struttura dati Prodotto. 
+
+\mbox{\Hypertarget{head__strutture_8h_a784ca7b7fa64cbb661eb0c903348c1ce}\label{head__strutture_8h_a784ca7b7fa64cbb661eb0c903348c1ce}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!sessione\+\_\+t@{sessione\+\_\+t}}
+\index{sessione\+\_\+t@{sessione\+\_\+t}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{sessione\+\_\+t}{sessione\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structsessione}{sessione} \hyperlink{head__strutture_8h_a784ca7b7fa64cbb661eb0c903348c1ce}{sessione\+\_\+t}}
+
+
+
+Struttura dati Sessione. 
+
+\mbox{\Hypertarget{head__strutture_8h_ad83512da590021d7b336c3cb314dc228}\label{head__strutture_8h_ad83512da590021d7b336c3cb314dc228}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!tipofile\+\_\+t@{tipofile\+\_\+t}}
+\index{tipofile\+\_\+t@{tipofile\+\_\+t}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{tipofile\+\_\+t}{tipofile\_t}}
+{\footnotesize\ttfamily typedef enum \hyperlink{head__strutture_8h_a7685164e8daeb6c2998e408a80d9ea05}{tipofile}  \hyperlink{head__strutture_8h_ad83512da590021d7b336c3cb314dc228}{tipofile\+\_\+t}}
+
+
+
+Indica il file da usare. 
+
+\mbox{\Hypertarget{head__strutture_8h_a4ef1b6d5b50a013be973ef01962dc932}\label{head__strutture_8h_a4ef1b6d5b50a013be973ef01962dc932}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!tree\+\_\+node\+\_\+t@{tree\+\_\+node\+\_\+t}}
+\index{tree\+\_\+node\+\_\+t@{tree\+\_\+node\+\_\+t}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{tree\+\_\+node\+\_\+t}{tree\_node\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structtree__node}{tree\+\_\+node}  \hyperlink{head__strutture_8h_a4ef1b6d5b50a013be973ef01962dc932}{tree\+\_\+node\+\_\+t}}
+
+
+
+Struttura dati tree\+\_\+noode.~\newline
+Definisce un nodo di un albero binario.~\newline
+Puo\textquotesingle{} essere usato sia per le strutture prodotti che per quelle persona, per questo e\textquotesingle{} presente un componente per ciascuno. 
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{head__strutture_8h_a20f710d6a73f95164e79b59ee0b883c2}\label{head__strutture_8h_a20f710d6a73f95164e79b59ee0b883c2}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!campo\+\_\+record@{campo\+\_\+record}}
+\index{campo\+\_\+record@{campo\+\_\+record}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{campo\+\_\+record}{campo\_record}}
+{\footnotesize\ttfamily enum \hyperlink{head__strutture_8h_a20f710d6a73f95164e79b59ee0b883c2}{campo\+\_\+record}}
+
+
+
+Indica il campo scelto nella selezione di ordinamento. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nome@{nome}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!nome@{nome}}}\mbox{\Hypertarget{head__strutture_8h_a20f710d6a73f95164e79b59ee0b883c2acc4d0ac26924c7ec496b4805bdce5444}\label{head__strutture_8h_a20f710d6a73f95164e79b59ee0b883c2acc4d0ac26924c7ec496b4805bdce5444}} 
+nome&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{cognome@{cognome}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!cognome@{cognome}}}\mbox{\Hypertarget{head__strutture_8h_a20f710d6a73f95164e79b59ee0b883c2a80c5c59ca7d13a4954c27d4f9972d431}\label{head__strutture_8h_a20f710d6a73f95164e79b59ee0b883c2a80c5c59ca7d13a4954c27d4f9972d431}} 
+cognome&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{id@{id}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!id@{id}}}\mbox{\Hypertarget{head__strutture_8h_a20f710d6a73f95164e79b59ee0b883c2a280d7329079c73a4a5df3f35697b60b1}\label{head__strutture_8h_a20f710d6a73f95164e79b59ee0b883c2a280d7329079c73a4a5df3f35697b60b1}} 
+id&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{alfabetico@{alfabetico}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!alfabetico@{alfabetico}}}\mbox{\Hypertarget{head__strutture_8h_a20f710d6a73f95164e79b59ee0b883c2aea4067ceb66474a1327144e0fda3de76}\label{head__strutture_8h_a20f710d6a73f95164e79b59ee0b883c2aea4067ceb66474a1327144e0fda3de76}} 
+alfabetico&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{prezzo@{prezzo}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!prezzo@{prezzo}}}\mbox{\Hypertarget{head__strutture_8h_a20f710d6a73f95164e79b59ee0b883c2a358fe02920fdff94e70e8d7d18e2f7d5}\label{head__strutture_8h_a20f710d6a73f95164e79b59ee0b883c2a358fe02920fdff94e70e8d7d18e2f7d5}} 
+prezzo&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5b}\label{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5b}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!menu@{menu}}
+\index{menu@{menu}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{menu}{menu}}
+{\footnotesize\ttfamily enum \hyperlink{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5b}{menu}}
+
+
+
+Indica il tipo di menu\textquotesingle{} che deve essere visualizzato. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nolog@{nolog}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!nolog@{nolog}}}\mbox{\Hypertarget{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5ba437577c424b4ee256943fac303178144}\label{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5ba437577c424b4ee256943fac303178144}} 
+nolog&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{log@{log}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!log@{log}}}\mbox{\Hypertarget{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5baaac8d4ee23e2d305f0b0a575cda066f3}\label{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5baaac8d4ee23e2d305f0b0a575cda066f3}} 
+log&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{novita@{novita}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!novita@{novita}}}\mbox{\Hypertarget{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5ba4b7a71d241e4df8affb579af19cc162a}\label{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5ba4b7a71d241e4df8affb579af19cc162a}} 
+novita&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{prodotti@{prodotti}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!prodotti@{prodotti}}}\mbox{\Hypertarget{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5ba5af3458aa4329a4359519e5057d1c91a}\label{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5ba5af3458aa4329a4359519e5057d1c91a}} 
+prodotti&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{clienti@{clienti}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!clienti@{clienti}}}\mbox{\Hypertarget{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5ba3e2eb8b6a1fc0e7e62eefcabd7829e90}\label{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5ba3e2eb8b6a1fc0e7e62eefcabd7829e90}} 
+clienti&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{dipendenti@{dipendenti}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!dipendenti@{dipendenti}}}\mbox{\Hypertarget{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5bad52548f382e3e0c4a3f3fd83fc8cb99d}\label{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5bad52548f382e3e0c4a3f3fd83fc8cb99d}} 
+dipendenti&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ordinamentoP@{ordinamentoP}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!ordinamentoP@{ordinamentoP}}}\mbox{\Hypertarget{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5ba3671359f0dc7811af63e725834dc8137}\label{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5ba3671359f0dc7811af63e725834dc8137}} 
+ordinamentoP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ordinamentoC@{ordinamentoC}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!ordinamentoC@{ordinamentoC}}}\mbox{\Hypertarget{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5ba31b9a9fb36611f86c2f20a32c5dda7a7}\label{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5ba31b9a9fb36611f86c2f20a32c5dda7a7}} 
+ordinamentoC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ordinamentoD@{ordinamentoD}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!ordinamentoD@{ordinamentoD}}}\mbox{\Hypertarget{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5baca37cab8ed1f4e68b81d33133a3fd0e2}\label{head__strutture_8h_a905479d79c2aa8410d2fc374bc75cc5baca37cab8ed1f4e68b81d33133a3fd0e2}} 
+ordinamentoD&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{head__strutture_8h_a7685164e8daeb6c2998e408a80d9ea05}\label{head__strutture_8h_a7685164e8daeb6c2998e408a80d9ea05}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!tipofile@{tipofile}}
+\index{tipofile@{tipofile}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{tipofile}{tipofile}}
+{\footnotesize\ttfamily enum \hyperlink{head__strutture_8h_a7685164e8daeb6c2998e408a80d9ea05}{tipofile}}
+
+
+
+Indica il file da usare. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{prod@{prod}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!prod@{prod}}}\mbox{\Hypertarget{head__strutture_8h_a7685164e8daeb6c2998e408a80d9ea05a92b14cce3e165acfbfe29c53d46c5ee1}\label{head__strutture_8h_a7685164e8daeb6c2998e408a80d9ea05a92b14cce3e165acfbfe29c53d46c5ee1}} 
+prod&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{clie@{clie}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!clie@{clie}}}\mbox{\Hypertarget{head__strutture_8h_a7685164e8daeb6c2998e408a80d9ea05a0ce60226ab327f0febfe23863e3160e1}\label{head__strutture_8h_a7685164e8daeb6c2998e408a80d9ea05a0ce60226ab327f0febfe23863e3160e1}} 
+clie&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{dipe@{dipe}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!dipe@{dipe}}}\mbox{\Hypertarget{head__strutture_8h_a7685164e8daeb6c2998e408a80d9ea05ac812e56c599a31d53e2b3dc32494d7ec}\label{head__strutture_8h_a7685164e8daeb6c2998e408a80d9ea05ac812e56c599a31d53e2b3dc32494d7ec}} 
+dipe&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{head__strutture_8h_a4717013d0abaa8c175dafda3925c3931}\label{head__strutture_8h_a4717013d0abaa8c175dafda3925c3931}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!get\+\_\+persona@{get\+\_\+persona}}
+\index{get\+\_\+persona@{get\+\_\+persona}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+persona()}{get\_persona()}}
+{\footnotesize\ttfamily void get\+\_\+persona (\begin{DoxyParamCaption}\item[{\hyperlink{head__strutture_8h_a58439881922e3f6e7ed51e352f2a0c1c}{persona\+\_\+t} $\ast$}]{persona,  }\item[{F\+I\+LE $\ast$}]{fp }\end{DoxyParamCaption})}
+
+
+
+Carica in persona i dati di una riga del file clienti.\+txt o dipendenti.\+txt. 
+
+Si ipotizza di essere nella posizione giusta e che il puntatore al file sia open.~\newline
+Alla fine lascia il puntatore sulla nuova riga se esiste. 
+\begin{DoxyParams}{Parameters}
+{\em persona\+\_\+t} & $\ast$persona \\
+\hline
+{\em F\+I\+LE} & $\ast$file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{head__strutture_8h_a8f08cdbfd563b68a75bef38e80c16cbc}\label{head__strutture_8h_a8f08cdbfd563b68a75bef38e80c16cbc}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!get\+\_\+prodotto@{get\+\_\+prodotto}}
+\index{get\+\_\+prodotto@{get\+\_\+prodotto}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+prodotto()}{get\_prodotto()}}
+{\footnotesize\ttfamily void get\+\_\+prodotto (\begin{DoxyParamCaption}\item[{\hyperlink{head__strutture_8h_afec16ee1fceb6c05f4be3538f36b1997}{prodotto\+\_\+t} $\ast$}]{prodotto,  }\item[{F\+I\+LE $\ast$}]{fp }\end{DoxyParamCaption})}
+
+
+
+Carica in prodotto i dati di una riga del file prodotti.\+txt. 
+
+Si ipotizza di essere nella posizione giusta e che il puntatore al file sia open.~\newline
+Alla fine lascia il puntatore sulla nuova riga se esiste. 
+\begin{DoxyParams}{Parameters}
+{\em prodotto\+\_\+t} & $\ast$prodotto \\
+\hline
+{\em F\+I\+LE} & $\ast$file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{head__strutture_8h_ad95b3b50d33dc0d99ce72e61aefe65e6}\label{head__strutture_8h_ad95b3b50d33dc0d99ce72e61aefe65e6}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!get\+\_\+string@{get\+\_\+string}}
+\index{get\+\_\+string@{get\+\_\+string}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+string()}{get\_string()}}
+{\footnotesize\ttfamily void get\+\_\+string (\begin{DoxyParamCaption}\item[{char $\ast$}]{stringa,  }\item[{int}]{lunghezza }\end{DoxyParamCaption})}
+
+
+
+Estrae da stdin una stringa di lunghezza massima data e la mette nella stringa passata come parametro, pone sempre \textbackslash{}0 alla fine. 
+
+Se ci sono piu\textquotesingle{} caratteri di quelli ammissibili svuota anche il buffer. 
+\begin{DoxyParams}{Parameters}
+{\em char} & $\ast$stringa \\
+\hline
+{\em int} & lunghezza \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{head__strutture_8h_ac85ae6df551b530c1638d7ebc48ab48a}\label{head__strutture_8h_ac85ae6df551b530c1638d7ebc48ab48a}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!get\+\_\+string\+\_\+file@{get\+\_\+string\+\_\+file}}
+\index{get\+\_\+string\+\_\+file@{get\+\_\+string\+\_\+file}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+string\+\_\+file()}{get\_string\_file()}}
+{\footnotesize\ttfamily void get\+\_\+string\+\_\+file (\begin{DoxyParamCaption}\item[{char $\ast$}]{stringa,  }\item[{int}]{lunghezza,  }\item[{F\+I\+LE $\ast$}]{fp }\end{DoxyParamCaption})}
+
+
+
+Estrae dal file passato come parametro una stringa di lunghezza massima data e la mette nella stringa passata come parametro, pone sempre \textbackslash{}0 alla fine. 
+
+Se ci sono piu\textquotesingle{} caratteri di quelli ammissibili svuota anche il buffer. A\+T\+T\+E\+N\+Z\+I\+O\+NE\+: Questo metodo non e\textquotesingle{} mai stato utilizzato nel programma quindi potrebbe non funzionare correttamente, potrebbe tornare utile. 
+\begin{DoxyParams}{Parameters}
+{\em char} & $\ast$stringa \\
+\hline
+{\em int} & lunghezza \\
+\hline
+{\em F\+I\+LE} & $\ast$fp \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{head__strutture_8h_a973195d321eed8af362eac78b711fd0f}\label{head__strutture_8h_a973195d321eed8af362eac78b711fd0f}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!initialize\+\_\+persona@{initialize\+\_\+persona}}
+\index{initialize\+\_\+persona@{initialize\+\_\+persona}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{initialize\+\_\+persona()}{initialize\_persona()}}
+{\footnotesize\ttfamily void initialize\+\_\+persona (\begin{DoxyParamCaption}\item[{\hyperlink{head__strutture_8h_a58439881922e3f6e7ed51e352f2a0c1c}{persona\+\_\+t} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Inizializza le componenti di una struttura persona. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em persona\+\_\+t} & $\ast$persona \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{head__strutture_8h_ae517940db604a664f340a08b4c1b1ee3}\label{head__strutture_8h_ae517940db604a664f340a08b4c1b1ee3}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!initialize\+\_\+prodotto@{initialize\+\_\+prodotto}}
+\index{initialize\+\_\+prodotto@{initialize\+\_\+prodotto}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{initialize\+\_\+prodotto()}{initialize\_prodotto()}}
+{\footnotesize\ttfamily void initialize\+\_\+prodotto (\begin{DoxyParamCaption}\item[{\hyperlink{head__strutture_8h_afec16ee1fceb6c05f4be3538f36b1997}{prodotto\+\_\+t} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Inizializza le componenti di una struttura prodotto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prodotto\+\_\+t} & $\ast$prodotto \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{head__strutture_8h_af2763b0dcb4f38febe8620bb4f65736d}\label{head__strutture_8h_af2763b0dcb4f38febe8620bb4f65736d}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!initialize\+\_\+session@{initialize\+\_\+session}}
+\index{initialize\+\_\+session@{initialize\+\_\+session}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{initialize\+\_\+session()}{initialize\_session()}}
+{\footnotesize\ttfamily void initialize\+\_\+session (\begin{DoxyParamCaption}\item[{\hyperlink{head__strutture_8h_a784ca7b7fa64cbb661eb0c903348c1ce}{sessione\+\_\+t} $\ast$}]{se }\end{DoxyParamCaption})}
+
+
+
+Inizializza le componenti di una struttura sessione. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sessione\+\_\+t} & $\ast$sessione \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{head__strutture_8h_a80d803c9093f8a72403d83adbaee7c42}\label{head__strutture_8h_a80d803c9093f8a72403d83adbaee7c42}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!is\+\_\+num@{is\+\_\+num}}
+\index{is\+\_\+num@{is\+\_\+num}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{is\+\_\+num()}{is\_num()}}
+{\footnotesize\ttfamily int is\+\_\+num (\begin{DoxyParamCaption}\item[{char $\ast$}]{stringa }\end{DoxyParamCaption})}
+
+
+
+Controlla se la stringa passata come parametro contiene solo caratteri numerici interi con segno. 
+
+Ritorna 0 se la stringa corrisponde al tipo definito, -\/1 altrimenti. 
+\begin{DoxyParams}{Parameters}
+{\em char} & $\ast$stringa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{head__strutture_8h_ad112c9780a37fb8cd6c53e0475fbdc3c}\label{head__strutture_8h_ad112c9780a37fb8cd6c53e0475fbdc3c}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!is\+\_\+ufnum@{is\+\_\+ufnum}}
+\index{is\+\_\+ufnum@{is\+\_\+ufnum}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{is\+\_\+ufnum()}{is\_ufnum()}}
+{\footnotesize\ttfamily int is\+\_\+ufnum (\begin{DoxyParamCaption}\item[{char $\ast$}]{stringa }\end{DoxyParamCaption})}
+
+
+
+Controlla se la stringa passata come parametro contiene solo caratteri numerici interi o non senza segno. 
+
+Ritorna 0 se la stringa corrisponde al tipo definito, -\/1 altrimenti. 
+\begin{DoxyParams}{Parameters}
+{\em char} & $\ast$stringa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000002}{Bug}]E\textquotesingle{} stato necessario includere sia , che . quindi potrebbe avere un comportamento leggermente diverso se usato un delimitatore di cifre diverso da quello definito dal proprio sistema (non causa comunque errori gravi, si perde al massimo la parte decimale). \end{DoxyRefDesc}
+\mbox{\Hypertarget{head__strutture_8h_ac472caf5ab5d1500de32eb9389419a0d}\label{head__strutture_8h_ac472caf5ab5d1500de32eb9389419a0d}} 
+\index{head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}!is\+\_\+unum@{is\+\_\+unum}}
+\index{is\+\_\+unum@{is\+\_\+unum}!head\+\_\+strutture.\+h@{head\+\_\+strutture.\+h}}
+\subsubsection{\texorpdfstring{is\+\_\+unum()}{is\_unum()}}
+{\footnotesize\ttfamily int is\+\_\+unum (\begin{DoxyParamCaption}\item[{char $\ast$}]{stringa }\end{DoxyParamCaption})}
+
+
+
+Controlla se la stringa passata come parametro contiene solo caratteri numerici interi senza segno. 
+
+Ritorna 0 se la stringa corrisponde al tipo definito, -\/1 altrimenti. 
+\begin{DoxyParams}{Parameters}
+{\em char} & $\ast$stringa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}

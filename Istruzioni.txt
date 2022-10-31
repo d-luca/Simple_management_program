@@ -1,0 +1,24 @@
+Il programma e' un normale gestionale, seguire i comandi del programma per un corretto utilizzo.
+La documentazione e' disponibile nella cartella doc
+
+Appena aperto il programma funziona in modalita' cliente.
+E' possibile per un cliente: 
+-) Visualizzare il messaggio Novita' impostato da un dipendente
+-) Visualizzare i prodotti in magazzino ordinandoli per ID, nome, prezzo
+
+E' possibile effettuare l'accesso come dipendente inserendo il giusto numero, facendo questo si potra' accedere con un account dipendenti iserito precedentemente (e' necessario conoscere l'id e la password).
+Una volta effettuato l'accesso il programma verra' eseguito in modalita' dipendente fino a che non si chiude il programma o non si effettua il logout.
+Un dipendente puo':
+-) Visualizzare e salvascrivere il messaggio Novita'
+-) Visualizzare con gli stessi criteri visti prima, aggiungere, modificare, eliminare i record prodotti
+-) Visualizzare (ordinamenti disponibili per nome cognome ID), aggiungere, modificare, eliminare i record clienti
+-) Visualizzare (ordinamenti disponibili per nome cognome ID), aggiungere, modificare, eliminare i record dipendenti
+
+Se non si hanno record dipendenti disponibili per il login, verra' automaticamente introdotto il record di default per non rimanere fuori.
+Record default:
+ID: 1
+Password: default
+
+I file verranno creati automaticamente durante l'esecuzione se non presenti.
+Al momento di necessita', verra' anche introdotto un record di default nel file dipendenti.txt (cosi'sara' impossibile rimanere senza un possibile login).
+ATTENZIONE: Non modificare per nessun motivo manualmente i file, i campi dei record sono settati ad hoc per una corretta esecuzione del programma, una qualsiasi modifica impropria comporterebbe risultati errati ed inaspettati.

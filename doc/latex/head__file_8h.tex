@@ -1,0 +1,175 @@
+\hypertarget{head__file_8h}{}\section{src/head\+\_\+file.h File Reference}
+\label{head__file_8h}\index{src/head\+\_\+file.\+h@{src/head\+\_\+file.\+h}}
+{\ttfamily \#include \char`\"{}head\+\_\+strutture.\+h\char`\"{}}\newline
+Include dependency graph for head\+\_\+file.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{head__file_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{head__file_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{head__file_8h_a4e7268c1826c7fcc6c3d2a015aae12ed}{insert\+\_\+record\+\_\+default} ()
+\begin{DoxyCompactList}\small\item\em Inserisce il record di default nel file dipendenti.\+txt. \end{DoxyCompactList}\item 
+int \hyperlink{head__file_8h_abf9633780cee7fef5c815bc604f6b7e1}{match\+\_\+access} (unsigned int \hyperlink{head__strutture_8h_a20f710d6a73f95164e79b59ee0b883c2a280d7329079c73a4a5df3f35697b60b1}{id}, char $\ast$psw)
+\begin{DoxyCompactList}\small\item\em Controlla se i dati passati come parametri corrispondono a un record nel file dipendenti.\+txt. \end{DoxyCompactList}\item 
+int \hyperlink{head__file_8h_a633ad1a19377632e8b75c215e05d7f86}{insert\+\_\+record} (\hyperlink{head__strutture_8h_ad83512da590021d7b336c3cb314dc228}{tipofile\+\_\+t} tipo)
+\begin{DoxyCompactList}\small\item\em Inserisce il record nel file specificato. \end{DoxyCompactList}\item 
+int \hyperlink{head__file_8h_aadcfa90a0a3a8c38767a9574e37d5350}{delete\+\_\+record} (\hyperlink{head__strutture_8h_ad83512da590021d7b336c3cb314dc228}{tipofile\+\_\+t} tipo)
+\begin{DoxyCompactList}\small\item\em Elimina il record dal file specificato se esiste. \end{DoxyCompactList}\item 
+int \hyperlink{head__file_8h_a2aa3a964e04c25e8c44ddb829d9ccc9d}{edit\+\_\+record} (\hyperlink{head__strutture_8h_ad83512da590021d7b336c3cb314dc228}{tipofile\+\_\+t} tipo)
+\begin{DoxyCompactList}\small\item\em Modifica il record dal file specificato se esiste. \end{DoxyCompactList}\item 
+void \hyperlink{head__file_8h_abcf6f805e23071ed8a53cae67fdc5624}{print\+\_\+novita} ()
+\begin{DoxyCompactList}\small\item\em Stampa il contenuto del file novita.\+txt. \end{DoxyCompactList}\item 
+void \hyperlink{head__file_8h_a3eda9b57c390f964b4e4b89ffb7d1a35}{set\+\_\+novita} ()
+\begin{DoxyCompactList}\small\item\em Salvascrive il messaggio inserito al posto di quello presente nel file novita.\+txt. \end{DoxyCompactList}\item 
+int \hyperlink{head__file_8h_aa422b9e44e491933e54ce77d24b87f89}{incremental\+\_\+add\+\_\+prodotti} ()
+\begin{DoxyCompactList}\small\item\em Incrementa o diminuisce il campo quantita\textquotesingle{} del record con l\textquotesingle{}ID specificato, se esiste. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contiene le definizioni dei metodi che potrebbero essere usati da altri file. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{head__file_8h_aadcfa90a0a3a8c38767a9574e37d5350}\label{head__file_8h_aadcfa90a0a3a8c38767a9574e37d5350}} 
+\index{head\+\_\+file.\+h@{head\+\_\+file.\+h}!delete\+\_\+record@{delete\+\_\+record}}
+\index{delete\+\_\+record@{delete\+\_\+record}!head\+\_\+file.\+h@{head\+\_\+file.\+h}}
+\subsubsection{\texorpdfstring{delete\+\_\+record()}{delete\_record()}}
+{\footnotesize\ttfamily int delete\+\_\+record (\begin{DoxyParamCaption}\item[{\hyperlink{head__strutture_8h_ad83512da590021d7b336c3cb314dc228}{tipofile\+\_\+t}}]{tipo }\end{DoxyParamCaption})}
+
+
+
+Elimina il record dal file specificato se esiste. 
+
+In base al file specificato dal parametro d\textquotesingle{}ingresso, visualizza l\textquotesingle{}interfaccia grafica per inserire i dati dei record e se i dati inseriti sono consistenti elimina dal file giusto il record con l\textquotesingle{}ID inserito.~\newline
+Ritorna 0 se la cancellazione e\textquotesingle{} avvenuta con successo, -\/1 se i dati inseriti sono inconsistenti o non e\textquotesingle{} stato possibile trovare il record con l\textquotesingle{}ID inserito.~\newline
+Se i file non esistono, questi verranno automaticamente creati.~\newline
+Inserisce il record di default se necessario nel file dipendenti.\+txt. 
+\begin{DoxyParams}{Parameters}
+{\em tipofile\+\_\+t} & tipo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{head__file_8h_a2aa3a964e04c25e8c44ddb829d9ccc9d}\label{head__file_8h_a2aa3a964e04c25e8c44ddb829d9ccc9d}} 
+\index{head\+\_\+file.\+h@{head\+\_\+file.\+h}!edit\+\_\+record@{edit\+\_\+record}}
+\index{edit\+\_\+record@{edit\+\_\+record}!head\+\_\+file.\+h@{head\+\_\+file.\+h}}
+\subsubsection{\texorpdfstring{edit\+\_\+record()}{edit\_record()}}
+{\footnotesize\ttfamily int edit\+\_\+record (\begin{DoxyParamCaption}\item[{\hyperlink{head__strutture_8h_ad83512da590021d7b336c3cb314dc228}{tipofile\+\_\+t}}]{tipo }\end{DoxyParamCaption})}
+
+
+
+Modifica il record dal file specificato se esiste. 
+
+In base al file specificato dal parametro d\textquotesingle{}ingresso, visualizza l\textquotesingle{}interfaccia grafica per inserire i dati dei record e se i dati inseriti sono consistenti modifica nel file giusto il record con l\textquotesingle{}ID inserito.~\newline
+Ritorna 0 se la modifica e\textquotesingle{} avvenuta con successo, -\/1 se i dati inseriti sono inconsistenti o non e\textquotesingle{} stato possibile trovare il record con l\textquotesingle{}ID inserito.~\newline
+Se i file non esistono, questi verranno automaticamente creati.~\newline
+Inserisce il record di default se necessario nel file dipendenti.\+txt. 
+\begin{DoxyParams}{Parameters}
+{\em tipofile\+\_\+t} & tipo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{head__file_8h_aa422b9e44e491933e54ce77d24b87f89}\label{head__file_8h_aa422b9e44e491933e54ce77d24b87f89}} 
+\index{head\+\_\+file.\+h@{head\+\_\+file.\+h}!incremental\+\_\+add\+\_\+prodotti@{incremental\+\_\+add\+\_\+prodotti}}
+\index{incremental\+\_\+add\+\_\+prodotti@{incremental\+\_\+add\+\_\+prodotti}!head\+\_\+file.\+h@{head\+\_\+file.\+h}}
+\subsubsection{\texorpdfstring{incremental\+\_\+add\+\_\+prodotti()}{incremental\_add\_prodotti()}}
+{\footnotesize\ttfamily int incremental\+\_\+add\+\_\+prodotti (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Incrementa o diminuisce il campo quantita\textquotesingle{} del record con l\textquotesingle{}ID specificato, se esiste. 
+
+Non si puo\textquotesingle{} decrementare piu\textquotesingle{} di quello che c\textquotesingle{}e\textquotesingle{} in magazzino, se si fa\textquotesingle{}, il record non viene modificato e compare un messaggio di errore.~\newline
+Se il file prodotti.\+txt non esiste viene creato automaticamente.~\newline
+Ritorna 0 se la modifica e\textquotesingle{} avvenuta correttamente, -\/1 se si e\textquotesingle{} tentato di decrementare piu\textquotesingle{} di quanto consentito, o i dati inseriti sono inconsistenti. \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{head__file_8h_a633ad1a19377632e8b75c215e05d7f86}\label{head__file_8h_a633ad1a19377632e8b75c215e05d7f86}} 
+\index{head\+\_\+file.\+h@{head\+\_\+file.\+h}!insert\+\_\+record@{insert\+\_\+record}}
+\index{insert\+\_\+record@{insert\+\_\+record}!head\+\_\+file.\+h@{head\+\_\+file.\+h}}
+\subsubsection{\texorpdfstring{insert\+\_\+record()}{insert\_record()}}
+{\footnotesize\ttfamily int insert\+\_\+record (\begin{DoxyParamCaption}\item[{\hyperlink{head__strutture_8h_ad83512da590021d7b336c3cb314dc228}{tipofile\+\_\+t}}]{tipo }\end{DoxyParamCaption})}
+
+
+
+Inserisce il record nel file specificato. 
+
+In base al file specificato dal parametro d\textquotesingle{}ingresso, visualizza l\textquotesingle{}interfaccia grafica per inserire i dati dei record e se i dati inseriti sono consistenti inserisce nel file giusto il record in ordine numerico col primo ID disponibile.~\newline
+Ritorna 0 se l\textquotesingle{}inserimento e\textquotesingle{} avvenuto con successo, -\/1 se i dati inseriti sono inconsistenti o non e\textquotesingle{} stato possibile inserire il record nel file.~\newline
+Se i file non esistono, questi verranno automaticamente creati./n A\+T\+T\+E\+N\+Z\+I\+O\+NE\+: Questo metodo non aggiunge il record di default al file dipendenti.\+txt, in questo modo e\textquotesingle{} possibile aggiungere il record 1 se prima si ha cancellato il record di default. 
+\begin{DoxyParams}{Parameters}
+{\em tipofile\+\_\+t} & tipo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{head__file_8h_a4e7268c1826c7fcc6c3d2a015aae12ed}\label{head__file_8h_a4e7268c1826c7fcc6c3d2a015aae12ed}} 
+\index{head\+\_\+file.\+h@{head\+\_\+file.\+h}!insert\+\_\+record\+\_\+default@{insert\+\_\+record\+\_\+default}}
+\index{insert\+\_\+record\+\_\+default@{insert\+\_\+record\+\_\+default}!head\+\_\+file.\+h@{head\+\_\+file.\+h}}
+\subsubsection{\texorpdfstring{insert\+\_\+record\+\_\+default()}{insert\_record\_default()}}
+{\footnotesize\ttfamily void insert\+\_\+record\+\_\+default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inserisce il record di default nel file dipendenti.\+txt. 
+
+\mbox{\Hypertarget{head__file_8h_abf9633780cee7fef5c815bc604f6b7e1}\label{head__file_8h_abf9633780cee7fef5c815bc604f6b7e1}} 
+\index{head\+\_\+file.\+h@{head\+\_\+file.\+h}!match\+\_\+access@{match\+\_\+access}}
+\index{match\+\_\+access@{match\+\_\+access}!head\+\_\+file.\+h@{head\+\_\+file.\+h}}
+\subsubsection{\texorpdfstring{match\+\_\+access()}{match\_access()}}
+{\footnotesize\ttfamily int match\+\_\+access (\begin{DoxyParamCaption}\item[{unsigned int}]{id,  }\item[{char $\ast$}]{psw }\end{DoxyParamCaption})}
+
+
+
+Controlla se i dati passati come parametri corrispondono a un record nel file dipendenti.\+txt. 
+
+Se il file dipendenti.\+txt non esiste, questo verra\textquotesingle{} automaticamente creato, inoltre verra\textquotesingle{} inserito il record di default. Ritorna 0 se c\textquotesingle{}e\textquotesingle{} stato un match, altrimenti ritorna -\/1.~\newline
+Inserisce il record di default se necessario nel file dipendenti.\+txt. 
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int id \\
+\hline
+{\em char} & $\ast$psw \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{head__file_8h_abcf6f805e23071ed8a53cae67fdc5624}\label{head__file_8h_abcf6f805e23071ed8a53cae67fdc5624}} 
+\index{head\+\_\+file.\+h@{head\+\_\+file.\+h}!print\+\_\+novita@{print\+\_\+novita}}
+\index{print\+\_\+novita@{print\+\_\+novita}!head\+\_\+file.\+h@{head\+\_\+file.\+h}}
+\subsubsection{\texorpdfstring{print\+\_\+novita()}{print\_novita()}}
+{\footnotesize\ttfamily void print\+\_\+novita (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stampa il contenuto del file novita.\+txt. 
+
+\mbox{\Hypertarget{head__file_8h_a3eda9b57c390f964b4e4b89ffb7d1a35}\label{head__file_8h_a3eda9b57c390f964b4e4b89ffb7d1a35}} 
+\index{head\+\_\+file.\+h@{head\+\_\+file.\+h}!set\+\_\+novita@{set\+\_\+novita}}
+\index{set\+\_\+novita@{set\+\_\+novita}!head\+\_\+file.\+h@{head\+\_\+file.\+h}}
+\subsubsection{\texorpdfstring{set\+\_\+novita()}{set\_novita()}}
+{\footnotesize\ttfamily void set\+\_\+novita (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Salvascrive il messaggio inserito al posto di quello presente nel file novita.\+txt. 
+
+Il messaggio deve essere lungo al massimo 400 caratteri (e\textquotesingle{} escluso il carattere $\sim$).~\newline
+Il messaggio viene considerato fino al carattere $\sim$ o fino a quando non si e\textquotesingle{} raggiunto i 400 caratteri.~\newline
+Il messaggio viene salvascritto solo se si inserisce qualcosa oltre al simbolo $\sim$ . 
